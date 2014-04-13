@@ -19,7 +19,7 @@
 			"file": "prussian_horsekick_data.py",
 			"settings":
 			{
-				"buffer_size": 2541,
+				"buffer_size": 2922,
 				"line_ending": "Unix"
 			}
 		},
@@ -27,7 +27,7 @@
 			"file": "simulated_dataframe_2.py",
 			"settings":
 			{
-				"buffer_size": 2316,
+				"buffer_size": 2519,
 				"line_ending": "Unix"
 			}
 		},
@@ -35,7 +35,7 @@
 			"file": "/Users/chrisralbon/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 			"settings":
 			{
-				"buffer_size": 262,
+				"buffer_size": 396,
 				"line_ending": "Unix"
 			}
 		}
@@ -249,20 +249,22 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2541,
+						"buffer_size": 2922,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1089,
-								1089
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -277,15 +279,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2316,
+						"buffer_size": 2519,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								514,
-								514
+								0,
+								0
 							]
 						],
 						"settings":
@@ -306,15 +308,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 262,
+						"buffer_size": 396,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								155,
-								155
+								0,
+								0
 							]
 						],
 						"settings":

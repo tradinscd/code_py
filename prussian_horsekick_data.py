@@ -14,7 +14,7 @@
 import pandas as pd
 
 year = pd.Series([1875, 1876, 1877, 1878, 1879, 1880, 1881, 1882, 1883, 1884,
-				  1885, 1886, 1887, 1888, 1889, 1890, 1891, 1892, 1893, 1894])
+                  1885, 1886, 1887, 1888, 1889, 1890, 1891, 1892, 1893, 1894])
 guard_corps = pd.Series([0,2,2,1,0,0,1,1,0,3,0,2,1,0,0,1,0,1,0,1])
 corps_1 = pd.Series([0,0,0,2,0,3,0,2,0,0,0,1,1,1,0,2,0,3,1,0])
 corps_2 = pd.Series([0,0,0,2,0,2,0,0,1,1,0,0,2,1,1,0,0,2,0,0])
@@ -31,22 +31,22 @@ corps_14 = pd.Series([1,1,2,1,1,3,0,4,0,1,0,3,2,1,0,2,1,1,0,0])
 corps_15 = pd.Series([0,1,0,0,0,0,0,1,0,1,1,0,0,0,2,2,0,0,0,0])
 
 # Create a dictionary variable that assigns variable names.
-variable_names = dict(year = year, guard_corps = guard_corps, corps_1 = corps_1,
-                      corps_2 = corps_2, corps_3 = corps_3, corps_4 = corps_4,
-                      corps_5 = corps_5, corps_6 = corps_6, corps_7 = corps_7,
-                      corps_8 = corps_8, corps_9 = corps_9, corps_10 = corps_10,
-                      corps_11 = corps_11 , corps_14 = corps_14,
-                      corps_15 = corps_15)
+variables = dict(year = year, guard_corps = guard_corps, corps_1 = corps_1,
+                 corps_2 = corps_2, corps_3 = corps_3, corps_4 = corps_4,
+                 corps_5 = corps_5, corps_6 = corps_6, corps_7 = corps_7,
+                 corps_8 = corps_8, corps_9 = corps_9, corps_10 = corps_10,
+                 corps_11 = corps_11 , corps_14 = corps_14,
+                 corps_15 = corps_15)
 
-# Create a dataframe.
-horsekick_data = pd.DataFrame(variable_names)
-
-# Reorder the order of the dataframe columns.
-# if we don't they are displayed in alphabetical order)
-horsekick_data = horsekick_data[['year', 'guard_corps', 'corps_1', 'corps_2',
-								 'corps_3', 'corps_4', 'corps_5', 'corps_6',
-								 'corps_7', 'corps_8', 'corps_9', 'corps_10',
-								 'corps_11', 'corps_14', 'corps_15']]
+# Create a dataframe, set the column order with columns=
+horsekick_data = pd.DataFrame(variables, columns = ['year', 'guard_corps',
+                                                    'corps_1', 'corps_2',
+                                                    'corps_3', 'corps_4',
+                                                    'corps_5', 'corps_6',
+                                                    'corps_7', 'corps_8',
+                                                    'corps_9', 'corps_10',
+                                                    'corps_11', 'corps_14',
+                                                    'corps_15'])
 
 # View the dataframe.
 print(horsekick_data)

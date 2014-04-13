@@ -27,7 +27,7 @@ ipython notebook
 ## How to install a module, in this case pandas
 
 export PATH=/Users/chrisralbon/anaconda/envs/py3k/bin:$PATH
-pip install pandas 
+pip install pandas
 
 ## How to install a module via condas, in this case pandas
 
@@ -35,19 +35,34 @@ conda install -n py3k pip
 
 Note that py3k is the name of the acaconda environment we installed in the top of this document
 
-## To make Python3 work with sublimetext2
+## To make Python3 work with sublimetext3
 
 1. Go to tools/build system/build new system, call it "Python3"
 
 2. Paste in this (if you have Anaconda installed)
 
 	{
-		"cmd": ["/Users/chrisralbon/anaconda/envs/py3k/bin/python3", "-u", "$file"],
-		"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
-		"selector": "source.python"
+    	"cmd":  ["/Users/chrisralbon/anaconda/envs/py3k/bin/python3", "-u", "$file"],
+    	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    	"selector": "source.python",
+    	"env": {"LANG": "en_US.UTF-8"}
 	}
 
-# How to install a module from github. 
+## To make Anaconda's Python2 work with sublimetext3
+
+1. Go to tools/build system/build new system, call it "Python2"
+
+2. Paste in this (if you have Anaconda installed)
+
+	{
+    	"cmd":  ["/Users/chrisralbon/anaconda/bin/python", "-u", "$file"],
+    	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    	"selector": "source.python",
+    	"env": {"LANG": "en_US.UTF-8"}
+	}
+
+
+# How to install a module from github.
 # In this case, this module: https://github.com/wrobstory/climatic.git
 
 export PATH=/Users/chrisralbon/anaconda/envs/py3k/bin:$PATH
@@ -119,3 +134,9 @@ In your Packages/User folder, create SublimeREPL/config/Python/Main.sublime-menu
 
 
 Save the file, and you should now have Tools -> SublimeREPL -> Python -> Python - Anaconda and IPython - Anaconda menu options to start REPLs with the Anaconda interpreter.
+
+# To launch ipython notebook (with anaconda's python 3) in chrome
+
+	activate source py3k
+	BROWSER=/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome ipython notebook
+

@@ -1,3 +1,5 @@
+# Polynomial Fitting
+
 import scipy.interpolate as sp
 import numpy
 import pylab
