@@ -1,6 +1,6 @@
 # Build Notes
 
-This is some basic instructions on how I setup my Python/Scipy/NumPy/Pandas/etc stack. The only thing I am missing is a description of how to install pip.
+This is some basic instructions on how I setup my Python/Scipy/NumPy/Pandas/etc stack. This is really just for me and probably won't help anyone else. The only thing I am missing is a description of how to install pip.
 
 ## Basic Setup
 
@@ -137,6 +137,6 @@ Save the file, and you should now have Tools -> SublimeREPL -> Python -> Python 
 
 # To launch ipython notebook (with anaconda's python 3) in chrome
 
-	activate source py3k
+	source activate py3k
 	BROWSER=/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome ipython notebook
 
