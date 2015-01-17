@@ -1,7 +1,7 @@
 code_py
 =======
 
-Some well commented code snippits in (mostly) Python 3
+Some well commented data science related code snippets in (mostly) Python 3. It was created by [Chris Albon](http://www.chrisalbon.com).
 
 This collection of snippits is not comprehensive, and is in many places repetative.
 
